@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Text Editor</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <main>
+      <section class="bg-blue-400 w-10/12 mx-auto mt-10 p-8 shadow-2xl shadow-slate-400">
+         <h1 class="text-center text-4xl mb-8">My Text Editor</h1>
+         <div class="bg-cyan-500 border-2 border-black">
+            <div class="flex justify-between p-4">
+               <div>
+                  <i class="fa-solid fa-bold mr-4 cursor-pointer" id="boldBtn"></i>
+                  <i class="fa-solid fa-italic mr-4 cursor-pointer" id="italicBtn"></i>
+                  <i class="fa-solid fa-underline mr-4 cursor-pointer" id="underlineBtn"></i>
+               </div>
+               <div>
+                  <i class="fa-solid fa-align-left mr-4 cursor-pointer" id="alignLeft"></i>
+                  <i class="fa-solid fa-align-center mr-4 cursor-pointer" id="alignCenter"></i>
+                  <i class="fa-solid fa-align-right mr-4 cursor-pointer" id="alignRight"></i>
+                  <i class="fa-solid fa-align-justify mr-4 cursor-pointer" id="alignJustify"></i>
+               </div> 
+               <div class="flex gap-4">
+                  <input type="number" id="fontSizeBtn" class="w-16 px-2 rounded" value="16">
+                  <p id="sentenceCase" class="cursor-pointer">aA</p>
+                  <input type="color" id="colorPicker" class="cursor-pointer">
+               </div>
+            </div>             
+            <div class="p-4">
+               <textarea id="textArea" rows="5" class="w-full resize-none p-8"></textarea>
+            </div>
+         </div>
+      </section>
+   </main>
+   <script src="./textEditor.js"></script>
+</body>
+</html>
